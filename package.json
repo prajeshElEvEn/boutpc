@@ -1,11 +1,23 @@
 {
   "name": "boutpc",
   "version": "1.0.0",
-  "description": "Know your Computers' basic information.",
+  "description": "Know your computer's basic information.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prajeshElEvEn/boutpc.git"
+  },
+  "keywords": [
+    "boutpc",
+    "knowyourpc"
+  ],
   "author": "eleven",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prajeshElEvEn/boutpc/issues"
+  },
+  "homepage": "https://github.com/prajeshElEvEn/boutpc#readme"
 }
