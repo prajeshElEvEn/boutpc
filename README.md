@@ -1,6 +1,10 @@
 # boutPC
 
-A simple lightweight npm package that displays basic infromation bout your computer.
+A simple light-weight npm package that displays basic infromation bout your computer. It works by fetching data from OS library of nodejs.
+
+## Pre-requisites
+
+Must have node installed on your PC.
 
 ## Installation
 
