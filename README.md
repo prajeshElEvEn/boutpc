@@ -1,6 +1,6 @@
 # boutPC
 
-A simple lightweight npm packsge that displays basic infromation bout your computer.
+A simple lightweight npm package that displays basic infromation bout your computer.
 
 ## Installation
 
