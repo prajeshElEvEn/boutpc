@@ -4,4 +4,4 @@ A simple lightweight npm packsge that displays basic infromation bout your compu
 
 ## Author
 
-[@prajeshElEvEn]()
+[@prajeshElEvEn](https://github.com/prajeshElEvEn)
