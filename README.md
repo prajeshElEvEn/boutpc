@@ -26,7 +26,7 @@ Install boutpc with npm
 
 ```bash
   const boutpc = require("boutpc")
-  console.log(boutpc)
+  boutpc()
 ```
 
 - In Terminal, write:
