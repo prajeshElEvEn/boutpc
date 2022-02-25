@@ -1,6 +1,6 @@
 {
   "name": "boutpc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Know your computer's basic information.",
   "main": "index.js",
   "scripts": {
