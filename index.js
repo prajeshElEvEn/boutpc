@@ -1,6 +1,6 @@
 const os = require("os")
 
-const boutpc = () => {
+// const boutpc = () => {
     console.log("------------------------")
     console.log("boutPC - Know You PC")
     console.log("------------------------")
@@ -25,6 +25,6 @@ const boutpc = () => {
     // console.log("CPU - ", os.cpus())
     // console.log("Network Interface- ", os.networkInterfaces())
     console.log("------------------------")
-}
+// }
 
-module.exports = boutpc
+// module.exports = boutpc
