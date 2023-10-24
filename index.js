@@ -1,30 +1,42 @@
-const os = require("os")
+const os = require("os");
+const figlet = require("figlet");
+const chalk = require("chalk");
 
 const boutpc = () => {
-    console.log("------------------------")
-    console.log("boutPC - Know You PC")
-    console.log("------------------------")
-    console.log("Hostname - ", os.hostname())
-    console.log("Username - ", os.userInfo().username)
-    console.log("Home directory - ", os.userInfo().homedir)
-    console.log("Shell - ", os.userInfo().shell)
-    console.log("Architecture - ", os.arch())
-    console.log("Platform - ", os.platform())
-    console.log("OS - ", os.type())
-    console.log("Release - ", os.release())
-    
+  console.log(
+    chalk.blueBright.bold(
+      figlet.textSync("boutPC", { horizontalLayout: "default" })
+    )
+  );
+  console.log(chalk.yellowBright("-------------------------------------"));
+  console.log(chalk.cyanBright("boutPC - Know Your PC"));
+  console.log(chalk.yellowBright("-------------------------------------"));
+  console.log(chalk.green("Hostname - "), os.hostname());
+  console.log(chalk.green("Username - "), os.userInfo().username);
+  console.log(chalk.green("Home directory - "), os.userInfo().homedir);
+  console.log(chalk.green("Shell - "), os.userInfo().shell);
+  console.log(chalk.green("Architecture - "), os.arch());
+  console.log(chalk.green("Platform - "), os.platform());
+  console.log(chalk.green("OS - "), os.type());
+  console.log(chalk.green("Release - "), os.release());
 
-    let tmem = Math.floor(os.totalmem() / (1024 * 1024))
-    console.log("Total Memory - ", tmem, "MBs")
-    let fmem = Math.floor(os.freemem() / (1024 * 1024))
-    console.log("Free Memory - ", fmem, "MBs")
+  let tmem = Math.floor(os.totalmem() / (1024 * 1024));
+  console.log(chalk.green("Total Memory - "), tmem, "MBs");
+  let fmem = Math.floor(os.freemem() / (1024 * 1024));
+  console.log(chalk.green("Free Memory - "), fmem, "MBs");
 
-    // let hours = (Math.floor(os.uptime() / 3600))%12
-    // let min = Math.floor((os.uptime() % 3600) / 60)
-    // console.log("Uptime - ", hours, "hrs", min, "min")
-    // console.log("CPU - ", os.cpus())
-    // console.log("Network Interface- ", os.networkInterfaces())
-    console.log("------------------------")
-}
+  let uptime = os.uptime();
+  let uptimeString = formatUptime(uptime);
+  console.log(chalk.green("Uptime - "), uptimeString);
+  console.log(chalk.yellowBright("-------------------------------------"));
+};
 
-module.exports = boutpc
+const formatUptime = (uptime) => {
+  let seconds = Math.floor(uptime % 60);
+  let minutes = Math.floor((uptime % 3600) / 60);
+  let hours = Math.floor(uptime / 3600);
+
+  return hours + " hrs " + minutes + " min " + seconds + " sec";
+};
+
+module.exports = boutpc;

@@ -1,38 +1,19 @@
 # boutPC
 
-A simple light-weight npm package that displays basic infromation bout your computer. It works by fetching data from OS library of nodejs.
-
-## Pre-requisites
-
-Must have node installed on your PC.
+A simple light-weight npm package that displays basic information bout your computer. It works by fetching data from OS library of Nodejs.
 
 ## Installation
 
-Install boutpc with npm
-
 ```bash
   npm i boutpc
 ```
 
-## How to Use
+## Usage
 
-- Install boutpc with npm
+```javascript
+const boutpc = require("boutpc");
 
-```bash
-  npm i boutpc
-```
-
-- Create a file 'index.js', and write:
-
-```bash
-  const boutpc = require("boutpc")
-  boutpc()
-```
-
-- In Terminal, write:
-
-```bash
-  node index
+boutpc();
 ```
 
 ## Author

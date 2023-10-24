@@ -1,23 +1,33 @@
 {
   "name": "boutpc",
-  "version": "1.0.5",
-  "description": "Know your computer's basic information.",
+  "version": "2.0.0",
+  "description": "a simple cli tool to display your system's information",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node .",
+    "dev": "nodemon .",
+    "test": "nodemon tests/index.js"
   },
+  "bin": "./index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/prajeshElEvEn/boutpc.git"
   },
   "keywords": [
-    "boutpc",
-    "knowyourpc"
+    "os",
+    "system"
   ],
   "author": "eleven",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/prajeshElEvEn/boutpc/issues"
   },
-  "homepage": "https://github.com/prajeshElEvEn/boutpc#readme"
+  "homepage": "https://github.com/prajeshElEvEn/boutpc#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "figlet": "^1.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
